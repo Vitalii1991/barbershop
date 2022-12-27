@@ -1,0 +1,64 @@
+/* основной цвет текста #555555 */
+/* цвет заголовков #303030 */
+/* вторичный цвет #9DA4BD */
+/* акцент цвет #FF6C00 */
+/* белый цвет #FFFFFF */
+
+/* основной шрифт OpenSans */
+/* вторичный шрифт Raleway */
+
+:root {
+    --primary-text-color: #555555;
+    --title-text-color: #303030;
+    --secondary-text-color: #9DA4BD;
+    --accent-color: #FF6C00;
+    --primary-white-color: #FFFFFF;
+}
+body {
+    background-color: var(--primary-white-color);
+    color: var(--primary-text-color);
+
+    font-family: Open Sans, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.86;
+    letter-spacing: 0.02em;
+}
+.list {
+    list-style: none;
+}
+button {
+    background-color: transparent;
+    color: var(--primary-white-color);
+
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+
+    border-color: var(--accent-color);
+    border-radius: 10px;
+}
+
+/* Header */
+header {
+    background-color: gray;
+}
+.site-nav .link,
+.contacts .link {
+    color: var(--primary-white-color);
+
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+
+    text-decoration: none;
+}
+.site-nav .link:hover,
+.site-nav .link:focus,
+.contacts .link:hover,
+.contacts .link:focus {
+    color: var(--accent-color);
+}
