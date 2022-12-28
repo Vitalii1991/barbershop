@@ -36,6 +36,7 @@ button {
     font-size: 12px;
     line-height: 1.33;
     letter-spacing: 0.09em;
+    cursor: pointer;
 
     border-color: var(--accent-color);
     border-radius: 10px;
