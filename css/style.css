@@ -7,62 +7,161 @@
 /* вторичный шрифт Raleway */
 
 :root {
-    --primary-text-color: #555555;
-    --title-text-color: #303030;
-    --secondary-text-color: #9DA4BD;
-    --accent-color: #FF6C00;
+  --primary-text-color: #555555;
+  --title-text-color: #303030;
+  --secondary-text-color: #9da4bd;
+  --accent-color: #ff6c00;
 }
 body {
-    background-color: #FFFFFF;
-    color: var(--primary-text-color);
+  background-color: #ffffff;
+  color: var(--primary-text-color);
 
-    font-family: Open Sans, sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.86;
-    letter-spacing: 0.02em;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
 }
 
 .list {
-    list-style: none;
+  list-style: none;
 }
 .link {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .btn {
-    background-color: transparent;
-    color: #FFFFFF;
+  background-color: transparent;
+  color: #ffffff;
 
-    font-family: inherit;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 1.33;
-    letter-spacing: 0.09em;
-    cursor: pointer;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  cursor: pointer;
 
-    border-color: var(--accent-color);
-    border-radius: 10px;
+  border-color: var(--accent-color);
+  border-radius: 10px;
+}
+
+.suptitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+}
+.title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.05em;
 }
 
 /* ------ Header ------ */
 .header {
-    background-color: gray;
+  background-color: gray;
 }
 .header-link,
 .header-tel {
-    color: #FFFFFF;
+  color: #ffffff;
 
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 1.33;
-    letter-spacing: 0.1em;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
 }
 .header-link:hover,
 .header-link:focus,
 .header-tel:hover,
-.header-tel:focus {
-    color: var(--accent-color);
+.header-tel:focus,
+.hero-link:hover,
+.hero-link:focus {
+  color: var(--accent-color);
 }
 
 /* ------ Hero ------ */
+
+.hero {
+  background-color: gray;
+}
+.hero-list {
+}
+.hero-item {
+}
+.hero-link {
+  color: var(--title-text-color);
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+}
+.hero-suptitle {
+  color: rgba(157, 164, 189, 0.6);
+}
+.hero-title {
+  color: #ffffff;
+
+  font-size: 72px;
+  line-height: 1.18;
+}
+.hero-subtitle {
+  color: var(--secondary-text-color);
+
+  font-size: 18px;
+  line-height: 1.67;
+}
+
+/* ------ About us ------ */
+
+.about {
+}
+.about-list {
+}
+.about-item {
+}
+.about-suptitle {
+  color: var(--title-text-color);
+}
+.about-title {
+  color: var(--title-text-color);
+
+  font-size: 42px;
+  line-height: 1.16;
+}
+.about-subtitle {
+  font-size: 18px;
+  line-height: 1.66;
+}
+.about-text {
+}
+.about-btn {
+  color: var(--title-text-color);
+}
+
+/* ------ Services and prices ------ */
+
+.services {
+  background-color: #303030;
+}
+.services-suptitle {
+  color: rgba(157, 164, 189, 0.6);
+}
+.services-title {
+  color: #ffffff;
+
+  font-size: 42px;
+  line-height: 1.16;
+}
+.services-list {
+}
+.services-item {
+}
+.services-text {
+  color: var(--secondary-text-color);
+
+  font-size: 18px;
+  line-height: 1.67;
+}
+.services-btn {
+}
