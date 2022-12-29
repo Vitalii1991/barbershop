@@ -2,7 +2,6 @@
 /* цвет заголовков #303030 */
 /* вторичный цвет #9DA4BD */
 /* акцент цвет #FF6C00 */
-/* белый цвет #FFFFFF */
 
 /* основной шрифт OpenSans */
 /* вторичный шрифт Raleway */
@@ -12,10 +11,9 @@
     --title-text-color: #303030;
     --secondary-text-color: #9DA4BD;
     --accent-color: #FF6C00;
-    --primary-white-color: #FFFFFF;
 }
 body {
-    background-color: var(--primary-white-color);
+    background-color: #FFFFFF;
     color: var(--primary-text-color);
 
     font-family: Open Sans, sans-serif;
@@ -24,12 +22,17 @@ body {
     line-height: 1.86;
     letter-spacing: 0.02em;
 }
+
 .list {
     list-style: none;
 }
-button {
+.link {
+    text-decoration: none;
+}
+
+.btn {
     background-color: transparent;
-    color: var(--primary-white-color);
+    color: #FFFFFF;
 
     font-family: inherit;
     font-weight: 600;
@@ -42,24 +45,24 @@ button {
     border-radius: 10px;
 }
 
-/* Header */
-header {
+/* ------ Header ------ */
+.header {
     background-color: gray;
 }
-.site-nav .link,
-.contacts .link {
-    color: var(--primary-white-color);
+.header-link,
+.header-tel {
+    color: #FFFFFF;
 
     font-weight: 600;
     font-size: 12px;
     line-height: 1.33;
     letter-spacing: 0.1em;
-
-    text-decoration: none;
 }
-.site-nav .link:hover,
-.site-nav .link:focus,
-.contacts .link:hover,
-.contacts .link:focus {
+.header-link:hover,
+.header-link:focus,
+.header-tel:hover,
+.header-tel:focus {
     color: var(--accent-color);
 }
+
+/* ------ Hero ------ */
