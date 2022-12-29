@@ -22,14 +22,12 @@ body {
   line-height: 1.86;
   letter-spacing: 0.02em;
 }
-
 .list {
   list-style: none;
 }
 .link {
   text-decoration: none;
 }
-
 .btn {
   background-color: transparent;
   color: #ffffff;
@@ -44,16 +42,21 @@ body {
   border-color: var(--accent-color);
   border-radius: 10px;
 }
-
 .suptitle {
+  color: var(--title-text-color);
+
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
   text-transform: uppercase;
 }
 .title {
+  color: var(--title-text-color);
+
   font-family: "Raleway", sans-serif;
   font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
   letter-spacing: 0.05em;
 }
 
@@ -121,13 +124,8 @@ body {
 .about-item {
 }
 .about-suptitle {
-  color: var(--title-text-color);
 }
 .about-title {
-  color: var(--title-text-color);
-
-  font-size: 42px;
-  line-height: 1.16;
 }
 .about-subtitle {
   font-size: 18px;
@@ -149,9 +147,6 @@ body {
 }
 .services-title {
   color: #ffffff;
-
-  font-size: 42px;
-  line-height: 1.16;
 }
 .services-list {
 }
@@ -164,4 +159,158 @@ body {
   line-height: 1.67;
 }
 .services-btn {
+}
+
+/* ------ Benefits ------ */
+
+.benefits {
+}
+.benefits-list {
+}
+.benefits-item {
+}
+.benefits-numbers {
+  color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+.benefits-text {
+  color: var(--title-text-color);
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+}
+.benefits-suptitle {
+}
+.benefits-title {
+}
+.benefits-subtitle {
+  font-size: 18px;
+  line-height: 1.17;
+}
+
+/* ------ Barbers ------ */
+
+.barbers {
+}
+.barbers-suptitle {
+}
+.barbers-title {
+}
+
+.barbers-list {
+}
+
+.barbers-item {
+}
+.barbers-item-title {
+  color: var(--title-text-color);
+
+  font-size: 18px;
+  line-height: 1.39;
+}
+.barbers-item-text {
+  color: var(--accent-color);
+
+  font-size: 14px;
+  line-height: 1.36;
+}
+
+/* ------ Portfolio ------ */
+
+.portfolio {
+}
+.portfolio-suptitle {
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.portfolio-list {
+}
+.portfolio-item {
+}
+
+/* ------ Subscription ------ */
+
+.subscription {
+
+}
+.subscription-title {
+
+}
+
+/* ------ Contacts ------ */
+
+.contacts {
+  background-color: #303030; 
+}
+.contacts-title {
+}
+.contscts-adress {
+  font-style: normal;
+}
+.contacts-list {
+}
+.contacts-item {
+}
+.contacts-link.bold {
+  font-weight: 700;
+}
+.contacts-link {
+  color: var(--secondary-text-color);
+
+  font-size: 18px;
+  line-height: 1.66;
+}
+.contacts-text {
+  color: #ffffff;
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+}
+.contacts-schedule {
+  color: var(--secondary-text-color);
+
+  font-size: 18px;
+  line-height: 1.66;
+}
+
+/* ------ Footer ------ */
+
+.footer {
+}
+.footer-copyright {
+  color: var(--secondary-text-color);
+
+  font-weight: 600;
+}
+.footer-list {
+}
+.footer-item {
+}
+.footer-link {
+  color: var(--title-text-color);
+
+  font-weight: 600;
+}
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--accent-color);
 }
