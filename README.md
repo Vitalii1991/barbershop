@@ -22,3 +22,6 @@ button {
 img {
     display: block;
 }
+ul {
+  padding-left: 0;
+}
