@@ -5,12 +5,21 @@
 
 /* основной шрифт OpenSans */
 /* вторичный шрифт Raleway */
-
 :root {
   --primary-text-color: #555555;
   --title-text-color: #303030;
   --secondary-text-color: #9da4bd;
   --accent-color: #ff6c00;
+}
+html {
+  box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  padding-left: 0;
 }
 body {
   background-color: #ffffff;
@@ -22,13 +31,25 @@ body {
   line-height: 1.86;
   letter-spacing: 0.02em;
 }
+.container {
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+  outline: 3px solid green;
+}
 .list {
   list-style: none;
+  margin: 0;
 }
 .link {
   text-decoration: none;
 }
 .btn {
+  padding: 12px 20px;
+
   background-color: transparent;
   color: #ffffff;
 
@@ -39,8 +60,8 @@ body {
   letter-spacing: 0.09em;
   cursor: pointer;
 
-  border-color: var(--accent-color);
-  border-radius: 10px;
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
 }
 .suptitle {
   color: var(--title-text-color);
@@ -59,10 +80,39 @@ body {
   line-height: 1.16;
   letter-spacing: 0.05em;
 }
+img {
+  display: block;
+}
 
 /* ------ Header ------ */
 .header {
   background-color: gray;
+}
+.header .container {
+  display: flex;
+  padding-top: 40px;
+
+  align-items: center;
+}
+.header-logo {
+  margin-right: 131px;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+.header-list {
+  display: flex;
+}
+.header-item:not(:last-child) {
+  margin-right: 30px;
+}
+.header-item {
+  
+}
+.header-link {
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 .header-link,
 .header-tel {
@@ -73,6 +123,9 @@ body {
   line-height: 1.33;
   letter-spacing: 0.1em;
 }
+.header-tel {
+  margin-right: 43px;
+}
 .header-link:hover,
 .header-link:focus,
 .header-tel:hover,
@@ -81,15 +134,27 @@ body {
 .hero-link:focus {
   color: var(--accent-color);
 }
+.header-contacts {
+  margin-left: auto;
+}
 
 /* ------ Hero ------ */
 
 .hero {
   background-color: gray;
 }
+.hero .container {
+  display: flex;
+  padding-top: 184px;
+  padding-bottom: 208px;
+}
+.hero-container-title {
+  margin-left: 158px;
+}
 .hero-list {
 }
 .hero-item {
+  writing-mode: vertical-rl;
 }
 .hero-link {
   color: var(--title-text-color);
