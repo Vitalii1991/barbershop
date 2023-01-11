@@ -25,3 +25,8 @@ img {
 ul {
   padding-left: 0;
 }
+
+Властивості:
+
+flex-shrink
+flex-grow

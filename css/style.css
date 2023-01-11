@@ -44,7 +44,7 @@ body {
   margin-right: auto;
   margin-left: auto;
 
-  outline: 3px solid green;
+  outline: 3px solid tomato;
 }
 .list {
   list-style: none;
@@ -54,8 +54,9 @@ body {
   text-decoration: none;
 }
 .btn {
+  min-width: 160px;
   padding: 12px 20px;
-
+  
   background-color: transparent;
   color: #ffffff;
 
@@ -92,7 +93,7 @@ img {
 
 /* ------ Header ------ */
 .header {
-  background-color: darkslategray;
+  background-color: #397c73;
 }
 .header .container {
   display: flex;
@@ -147,17 +148,20 @@ img {
 /* ------ Hero ------ */
 
 .hero {
-  background-color: darkslategray;
-}
-.hero .container {
-  display: flex;
   padding-top: 184px;
   padding-bottom: 208px;
 }
+.hero .container {
+  display: flex;
+}
 .hero-container-title {
   margin-left: 158px;
+  flex-grow: 1;
+
+  background-color: #4c8981;
 }
 .hero-list {
+  width: 100px;
 }
 .hero-item {
 }
@@ -188,11 +192,12 @@ img {
 /* ------ About us ------ */
 
 .about {
+  background-color: #60968f;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .about .container {
   display: flex;
-  padding-top: 120px;
-  padding-bottom: 120px;
 }
 .about-list {
   display: flex;
@@ -226,11 +231,12 @@ img {
 /* ------ Services and prices ------ */
 
 .services {
+  padding-top: 120px;
+  padding-bottom: 120px;
+
   background-color: #111319;
 }
 .services .container {
-  padding-top: 120px;
-  padding-bottom: 120px;
 }
 .services-suptitle {
   margin-bottom: 20px;
@@ -247,6 +253,7 @@ img {
 }
 .services-list {
   width: 570px;
+  padding: 30px 20px;
   margin-bottom: 44px;
 
   background: linear-gradient(180deg, #171a24 0%,
@@ -258,6 +265,9 @@ img {
 .services-item {
   display: flex;
   justify-content: space-between;
+}
+.services-item:not(:last-child) {
+  margin-bottom: 20px;
 }
 .services-text {
   color: var(--secondary-text-color);
@@ -274,19 +284,54 @@ img {
 /* ------ Benefits ------ */
 
 .benefits {
+  background-color: #74a39d;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.benefits .container {
+  display: flex;
 }
 .benefits-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 370px;
+  margin-left: 69px;
+
+  text-align: center;
 }
 .benefits-item {
+  box-sizing: border-box;
+  width: 170px;
+  height: 133px;
+  padding: 20px 24px;
+
+  background-color: #F7F7F7;
+}
+.benefits-item:nth-child(2n + 1) {
+  margin-right: 30px;
+}
+.benefits-item:nth-child(1),
+.benefits-item:nth-child(2) {
+  margin-bottom: 30px;
 }
 .benefits-numbers {
-  color: var(--title-text-color);
+  margin-bottom: 6px;
 
+  color: var(--title-text-color);
   font-weight: 700;
   font-size: 42px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.05em;
+}
+.benefits-numbers::after {
+  content: "+";
+  position: absolute;
+
+  color: var(--accent-color);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
 }
 .benefits-text {
   color: var(--title-text-color);
@@ -295,9 +340,15 @@ img {
   font-size: 11px;
   line-height: 1.36;
 }
+.benefits-container {
+  width: 500px;
+  margin-left: 130px;
+}
 .benefits-suptitle {
+  margin-bottom: 20px;
 }
 .benefits-title {
+  margin-bottom: 20px;
 }
 .benefits-subtitle {
   font-size: 18px;
@@ -307,17 +358,27 @@ img {
 /* ------ Barbers ------ */
 
 .barbers {
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+  background-color: #F7F7F7;
 }
 .barbers-suptitle {
+  margin-bottom: 20px;
 }
 .barbers-title {
+  margin-bottom: 44px;
 }
-
 .barbers-list {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
 }
-
 .barbers-item {
 }
+/* .barbers-item:not(:last-child) {
+  margin-right: 30px;
+} */
 .barbers-item-title {
   color: var(--title-text-color);
 
@@ -334,6 +395,7 @@ img {
 /* ------ Portfolio ------ */
 
 .portfolio {
+  background-color: #88b0ab;
 }
 .portfolio-suptitle {
 }
