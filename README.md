@@ -28,5 +28,10 @@ ul {
 
 Властивості:
 
+justify-content (розташування по головній осі)
+align-items (розташування по допоміжній осі)
+
+flex-direction (напрямок елементів в контейнері)
+
 flex-shrink
 flex-grow
