@@ -178,9 +178,19 @@ img {
   background-color: grey;
 }
 .hero-suptitle {
+  display: flex;
   margin-bottom: 20px;
+  align-items: center;
 
   color: rgba(157, 164, 189, 0.6);
+}
+.hero-suptitle::before {
+  content: "";
+  width: 60px;
+  height: 1px;
+  margin-right: 20px;
+
+  background-color: rgba(157, 164, 189, 0.6);
 }
 .hero-title {
   margin-bottom: 20px;
@@ -216,7 +226,17 @@ img {
   padding-right: 100px;
 }
 .about-suptitle {
+  display: flex;
+  align-items: center;
   margin-bottom: 20px;
+}
+.about-suptitle::before {
+  content: "";
+  width: 60px;
+  height: 1px;
+  margin-right: 20px;
+
+  background-color: var(--title-text-color);
 }
 .about-title {
   margin-bottom: 20px;
@@ -251,9 +271,19 @@ img {
 .services .container {
 }
 .services-suptitle {
+  display: flex;
+  align-items: center;
   margin-bottom: 20px;
 
   color: rgba(157, 164, 189, 0.6);
+}
+.services-suptitle::before {
+  content: "";
+  width: 60px;
+  height: 1px;
+  margin-right: 20px;
+
+  background-color: rgba(157, 164, 189, 0.6);
 }
 .services-title {
   margin-bottom: 42px;
@@ -356,7 +386,17 @@ img {
   padding-left: 130px;
 }
 .benefits-suptitle {
+  display: flex;
+  align-items: center;
   margin-bottom: 20px;
+}
+.benefits-suptitle::before {
+  content: "";
+  width: 60px;
+  height: 1px;
+  margin-right: 20px;
+
+  background-color: var(--title-text-color);
 }
 .benefits-title {
   margin-bottom: 20px;
@@ -368,13 +408,24 @@ img {
   line-height: 1.17;
 }
 
+
 /* ------ Barbers ------ */
 
 .barbers {
   background-color: #F7F7F7;
 }
 .barbers-suptitle {
+  display: flex;
+  align-items: center;
   margin-bottom: 20px;
+}
+.barbers-suptitle::before {
+  content: "";
+  width: 60px;
+  height: 1px;
+  margin-right: 20px;
+
+  background-color: var(--title-text-color);
 }
 .barbers-title {
   margin-bottom: 44px;
@@ -432,7 +483,17 @@ img {
 .portfolio {
 }
 .portfolio-suptitle {
+  display: flex;
+  align-items: center;
   margin-bottom: 44px;
+}
+.portfolio-suptitle::before {
+  content: "";
+  width: 60px;
+  height: 1px;
+  margin-right: 20px;
+
+  background-color: var(--title-text-color);
 }
 .visually-hidden {
   position: absolute;
@@ -509,6 +570,8 @@ img {
   margin-right: 16px;
 }
 .contacts-text {
+  display: flex;
+  align-items: center;
   margin-bottom: 20px;
 
   color: #ffffff;
@@ -516,6 +579,14 @@ img {
   font-size: 11px;
   line-height: 1.36;
   text-transform: uppercase;
+}
+.contacts-text::before {
+  content: "";
+  width: 60px;
+  height: 1px;
+  margin-right: 20px;
+
+  background-color: rgba(157, 164, 189, 0.4);
 }
 .contacts-schedule {
   color: var(--secondary-text-color);
