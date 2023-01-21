@@ -45,7 +45,7 @@ body {
   margin-right: auto;
   margin-left: auto;
 
-  /* outline: 3px solid tomato; */
+  outline: 3px solid tomato;
 }
 .list {
   list-style: none;
@@ -168,21 +168,13 @@ img {
   letter-spacing: 0.2em;
 }
 .hero-container-title {
-  width: 1070px;
-  max-height: 680px;
-
-  padding: 184px 526px 208px 100px;
+  padding: 252px 100px 208px;
   flex-grow: 1;
 
   background-image: linear-gradient(
-    to right,
     rgba(25, 28, 38, 0.2),
     rgba(25, 28, 38, 0.2)),
     url("../image/Slider-img-3.jpg");
-  
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   background-color: grey;
 }
 .hero-suptitle {
