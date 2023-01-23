@@ -331,6 +331,7 @@ img {
 .benefits-numbers {
   display: inline-block;
   margin-bottom: 6px;
+  position: relative;
 
   color: var(--title-text-color);
   font-weight: 700;
@@ -342,6 +343,8 @@ img {
 .benefits-numbers::after {
   content: "+";
   position: absolute;
+  top: 6px;
+  right: -12px;
 
   color: var(--accent-color);
   font-weight: 600;
