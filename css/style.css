@@ -45,7 +45,7 @@ body {
   margin-right: auto;
   margin-left: auto;
 
-  outline: 1px solid tomato;
+  /* outline: 1px solid tomato; */
 }
 .list {
   list-style: none;
@@ -111,7 +111,7 @@ img {
 .header {
   position: absolute;
   width: 100%;
-  padding-top: 32px;
+  padding-top: 30px;
 }
 .header .container {
   display: flex;
@@ -152,7 +152,7 @@ img {
   color: var(--accent-color);
 }
 .header-contacts {
-  margin-left: auto;
+  margin-left: 264px;
 }
 
 /* ------ Hero ------ */
