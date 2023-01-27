@@ -131,6 +131,8 @@ img {
 .header-link {
   padding-top: 12px;
   padding-bottom: 12px;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-link,
 .header-tel {
@@ -142,13 +144,11 @@ img {
 }
 .header-tel {
   margin-right: 43px;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header-link:hover,
-.header-link:focus,
-.header-tel:hover,
-.header-tel:focus,
-.hero-link:hover,
-.hero-link:focus {
+.header-link:is(:hover, :focus),
+.header-tel:is(:hover, :focus) {
   color: var(--accent-color);
 }
 .header-contacts {
@@ -169,11 +169,16 @@ img {
   width: 100px;
 }
 .hero-link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   color: var(--title-text-color);
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
   letter-spacing: 0.2em;
+}
+.hero-link:is(:hover, :focus) {
+  color: var(--accent-color);
 }
 .hero-container-title {
   padding: 252px 100px 208px;
@@ -417,12 +422,12 @@ img {
   align-items: center;
 
   color: var(--title-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   background-color: #ffffff;
   border-radius: 50%;
 }
-.social-link:hover,
-.social-link:focus {
+.social-link:is(:hover, :focus) {
   color: var(--accent-color);
 }
 .social-link > svg {
