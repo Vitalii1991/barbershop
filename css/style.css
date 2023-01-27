@@ -167,13 +167,12 @@ img {
   min-height: 680px;
 }
 .hero-soc {
+  box-sizing: border-box;
   width: 100px;
   display: flex;
   align-items: flex-end;
   padding-left: 27px;
   padding-bottom: 40px;
-
-  outline: 1px solid tomato;
 }
 .hero-list {
   display: flex;
@@ -212,7 +211,7 @@ img {
   background-color: grey;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position:right bottom;
+  background-position: right bottom;
 }
 .hero-suptitle {
   color: rgba(157, 164, 189, 0.6);
