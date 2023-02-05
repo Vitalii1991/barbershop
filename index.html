@@ -281,24 +281,22 @@
                 <section class="subscription">
                     <h2 class="subscription-title title">Online-booking</h2>
                     <form class="online-form">
-                        <div class="form-container">
-                            <div class="user-name-form form">
-                                <label for="user-name"></label>
-                                <input class="input-name bgc" type="text" id="user-name" placeholder="Name*">
-                            </div>
+                        <div class="input-group">
+                            <input class="online-input online-item"
+                            type="text"
+                            name="online-name"
+                            placeholder="Name*">
     
-                            <div class="user-tel-form form">
-                                <label for="user-tel"></label>
-                                <input class="input-tel bgc" type="tel" id="user-tel" placeholder="Phone*">
-                            </div>
+                            <input class="online-input online-item"
+                            type="tel"
+                            name="online-phone"
+                            placeholder="Phone*">
                         </div>
-                        <div class="user-comment-form">
-                            <label for="user-comment"></label>
-                            <textarea class="textarea-text bgc"
-                            name="text"
-                            id="user-comment"
-                            placeholder="Message"></textarea>
-                        </div>
+
+                        <textarea class="online-text online-item"
+                        name="online-message"
+                        placeholder="Message"></textarea>
+                        
                         <button class="submit btn" type="submit">Send</button>
                     </form>
                 </section>

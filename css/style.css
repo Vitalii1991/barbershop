@@ -486,31 +486,60 @@ img {
 /*------ Subscribe ------ */
 
 .subscription {
-  padding-right: 30px;
+  width: calc(50% + 15px);
+  padding-top: 130px;
+  padding-bottom: 120px;
 }
 .subscription-title {
   margin-bottom: 44px;
-}
-.form-container {
-  display: flex;
-  gap: 30px;
-}
-.form-container > .form {
-  width: calc((100% - 30px) / 2);
-}
-.bgc {
-  width: 100%;
-  background-color: transparent;
-  border: none;
-  border-bottom: 1px solid #ffffff;
-}
-.textarea-text {
-  resize: none;
-}
-.user-comment-form {
-  margin-bottom: 44px;
-}
 
+  color: #ffffff;
+}
+.input-group {
+  margin-bottom: 44px;
+  display: flex;
+}
+.online-input {
+  width: 270px;
+  height: 24px;
+  padding: 0;
+  padding-bottom: 8px;
+}
+.online-input:not(:last-child) {
+  margin-right: 30px;
+}
+.online-text {
+  width: 570px;
+  height: 76px;
+  resize: none;
+  margin-bottom: 44px;
+  padding: 0;
+}
+.online-item {
+  color: #ffffff;
+  outline: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  background-color: transparent;
+
+  transition: border-color 250ms linear;
+}
+.online-item::placeholder {
+  color: rgba(157, 164, 189, 0.4);
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  transition: color 250ms linear;
+}
+.online-item:focus {
+  border-color: #ffffff;
+}
+.online-item:focus::placeholder {
+  color: #ffffff;
+}
 
 /*------ Contacts ------ */
 
@@ -526,14 +555,6 @@ img {
 }
 .contact-wrap .container {
   display: flex;
-}
-.subscription {
-  width: calc(50% + 15px);
-  padding-top: 130px;
-  padding-bottom: 120px;
-}
-.subscription-title {
-  color: #ffffff;
 }
 .contacts {
   box-sizing: border-box;
