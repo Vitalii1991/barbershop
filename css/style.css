@@ -44,8 +44,6 @@ body {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-
-  /* outline: 1px solid tomato; */
 }
 .list {
   list-style: none;
@@ -484,6 +482,35 @@ img {
 .portfolio-item {
   width: calc((100% - 90px) / 4);
 }
+
+/*------ Subscribe ------ */
+
+.subscription {
+  padding-right: 30px;
+}
+.subscription-title {
+  margin-bottom: 44px;
+}
+.form-container {
+  display: flex;
+  gap: 30px;
+}
+.form-container > .form {
+  width: calc((100% - 30px) / 2);
+}
+.bgc {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+}
+.textarea-text {
+  resize: none;
+}
+.user-comment-form {
+  margin-bottom: 44px;
+}
+
 
 /*------ Contacts ------ */
 
