@@ -2,7 +2,15 @@
   .container {
     max-width: 1200px;
   }
+  .btn:is(:hover, :focus) {
+    color: #ffffff;
+    background-color: var(--accent-color);
+  }
   .hero-link:is(:hover, :focus) {
+    color: var(--accent-color);
+  }
+  .header-link:is(:hover, :focus),
+  .header-tel:is(:hover, :focus) {
     color: var(--accent-color);
   }
 }

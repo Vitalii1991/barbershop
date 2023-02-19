@@ -2,8 +2,10 @@
   .container {
     max-width: 480px;
   }
-  .hero-container-title {
+  .hero .container {
     max-width: 690px;
+  } 
+  .hero-container-bg {
     background-image: linear-gradient(
         rgba(25, 28, 38, 0.2),
         rgba(25, 28, 38, 0.2)
