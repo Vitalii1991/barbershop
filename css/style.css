@@ -157,7 +157,7 @@ img {
   top: 0;
   right: 0;
 
-  width: 70%;
+  width: 62%;
   height: 100vh;
   padding-top: 48px;
   padding-left: 40px;
@@ -166,7 +166,6 @@ img {
 }
 .menu-container {
   max-width: 266px;
-  padding-right: 10px;
 }
 .btn-close {
   display: block;
@@ -175,6 +174,7 @@ img {
 
   margin-left: auto;
   margin-bottom: 30px;
+  padding: 0;
 
   color: #000000;
   border: none;
@@ -186,11 +186,13 @@ img {
 .btn-close > svg {
   fill: currentColor;
 }
+.mob-menu-nav {
+  margin-bottom: 64px;
+}
 .mob-menu-list {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  margin-bottom: 64px;
 }
 .mob-menu-link,
 .mob-menu-tel {
@@ -223,15 +225,21 @@ img {
   color: #ffffff;
   background-color: var(--accent-color);
 }
-.menu-soc-container {
-  display: flex;
+.menu-soc-list {
+  position: relative;
+
+  padding-left: 100px;
 }
-.menu-soc-container::before {
-    content: "";
-    width: 60px;
-    height: 1px;
-  
-    background-color: currentColor;
+.menu-soc-list::before {
+  position: absolute;
+  top: 13px;
+  left: 0;
+
+  content: "";
+  width: 60px;
+  height: 1px;
+
+  background-color: currentColor;
 }
 .menu-soc-link {
   color: var(--title-text-color);
