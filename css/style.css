@@ -109,6 +109,9 @@ img {
   visibility: hidden;
   pointer-events: none;
 }
+.no-scroll {
+  overflow: hidden;
+}
 
 /* ------ Header ------ */
 
@@ -157,15 +160,18 @@ img {
   top: 0;
   right: 0;
 
+  overflow-y: auto;
+
   width: 62%;
   height: 100vh;
-  padding-top: 48px;
-  padding-left: 40px;
+  padding: 48px 31px 227px 40px;
 
   background-color: #ffffff;
 }
 .menu-container {
   max-width: 266px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .btn-close {
   display: block;
