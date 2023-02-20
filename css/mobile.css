@@ -88,4 +88,13 @@
   .barbers-title {
     font-size: 42px;
   }
+
+  /* ----- Modal window ----- */
+
+  .modal {
+    width: 408px; 
+  }
+  .title-modal {
+    font-size: 16px;
+  }
 }
