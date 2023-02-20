@@ -278,7 +278,7 @@ img {
 }
 .hero-container-bg {
   max-width: 480px;
-  padding: 208px 0 209px 31px;
+  padding: 208px 20px 209px 20px;
 
   background-image: linear-gradient(
       rgba(25, 28, 38, 0.2),
