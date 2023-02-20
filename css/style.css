@@ -96,7 +96,7 @@ body {
 
   color: var(--title-text-color);
   font-weight: 600;
-  font-size: 11px;
+  font-size: 9px;
   line-height: 1.36;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -108,11 +108,16 @@ body {
 
   background-color: currentColor;
 }
+.subtitle {
+  color: var(--secondary-text-color);
+  font-size: 14px;
+  line-height: 1.62;
+}
 .title {
   color: var(--title-text-color);
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 42px;
+  font-size: 26px;
   line-height: 1.16;
   letter-spacing: 0.05em;
 }
@@ -273,8 +278,7 @@ img {
 }
 .hero-container-bg {
   max-width: 480px;
-  padding: 208px 128px 209px 31px;
-  flex-grow: 1;
+  padding: 208px 0 209px 31px;
 
   background-image: linear-gradient(
       rgba(25, 28, 38, 0.2),
@@ -299,14 +303,10 @@ img {
   margin-bottom: 20px;
 
   color: #ffffff;
-  font-size: 48px;
+  font-size: 42px;
 }
 .hero-subtitle {
   max-width: 360px;
-
-  color: var(--secondary-text-color);
-  font-size: 16px;
-  line-height: 1.62;
 }
 
 /* ------ About us ------ */
@@ -318,27 +318,26 @@ img {
   max-width: 418px;
 }
 .about-title {
-  max-width: 306px;
   margin-bottom: 20px;
 
-  font-size: 28px;
   line-height: 1.18;
 }
 .about-subtitle {
   margin-bottom: 20px;
 
-  font-size: 16px;
-  line-height: 1.62;
+  color: #555555;
 }
 .about-text {
   margin-bottom: 40px;
+
+  font-size: 12px;
 }
 .about-btn {
   color: var(--title-text-color);
 }
 .about-btn:focus {
   color: #ffffff;
-}   
+}
 
 /* ------ Services and prices ------ */
 
@@ -359,6 +358,10 @@ img {
       background-image: url(../image/services-bg-mobile-2x.png);
   }
 }
+.services .container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
 .services-suptitle {
   color: rgba(157, 164, 189, 0.6);
 }
@@ -366,13 +369,12 @@ img {
   margin-bottom: 44px;
 
   color: #ffffff;
-  font-size: 40px;
 }
 .services-list {
   display: none;
 }
 .services-mob-list {
-  padding: 30px 20px 30px 40px;
+  padding: 15px;
   margin-bottom: 44px;
 
   background-image: linear-gradient(
@@ -396,8 +398,10 @@ img {
   margin-bottom: 20px;
 }
 .services-text {
+  max-width: 100px;
+
   color: var(--secondary-text-color);
-  font-size: 14px;
+  font-size: 11px;
   line-height: 1.43;
 }
 .services-text:first-child {
@@ -424,8 +428,8 @@ img {
 .benefits-item {
   box-sizing: border-box;
   width: calc((100% - 30px) / 2);
-  height: 133px;
-  padding: 20px 35px;
+  height: 110px;
+  padding: 15px 20px;
 
   background-color: #f7f7f7;
 }
@@ -438,7 +442,7 @@ img {
 
   color: var(--title-text-color);
   font-weight: 700;
-  font-size: 42px;
+  font-size: 26px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.05em;
@@ -459,7 +463,7 @@ img {
 .benefits-text {
   color: var(--title-text-color);
   font-weight: 600;
-  font-size: 11px;
+  font-size: 9px;
   line-height: 1.36;
 }
 .benefits-title {
@@ -468,8 +472,7 @@ img {
 .benefits-subtitle {
   max-width: 380px;
 
-  font-size: 18px;
-  line-height: 1.67;
+  color: #555555;
 }
 
 /* ------ Barbers ------ */
