@@ -58,4 +58,10 @@
   .benefits-container {
     padding-left: 130px;
   }
+
+
+
+  .social-link:is(:hover, :focus) {
+    color: var(--accent-color);
+  }
 }

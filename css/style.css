@@ -481,11 +481,13 @@ img {
 }
 .barbers-list {
   display: flex;
+  flex-direction: column;
+  gap: 64px;
+  align-items: center;
   text-align: center;
-  justify-content: space-between;
 }
-.barbers-item > img {
-  margin-bottom: 30px;
+.barbers-info {
+  padding-top: 30px;
 }
 .barbers-item-title {
   margin-bottom: 8px;
@@ -519,7 +521,7 @@ img {
   background-color: #ffffff;
   border-radius: 50%;
 }
-.social-link:is(:hover, :focus) {
+.social-link:focus {
   color: var(--accent-color);
 }
 .social-link > svg {
