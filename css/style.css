@@ -39,8 +39,12 @@ body {
   letter-spacing: 0.02em;
 }
 .container {
+  box-sizing: border-box;
+  max-width: 480px;
   margin-right: auto;
   margin-left: auto;
+
+  outline: 1px solid tomato;
 
   padding-left: 30px;
   padding-right: 30px;
@@ -549,10 +553,8 @@ img {
 .portfolio-list {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 30px;
-}
-.portfolio-item {
-  width: calc((100% - 90px) / 4);
 }
 
 /*------ Subscribe ------ */

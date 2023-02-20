@@ -12,4 +12,19 @@
       ),
       url("../image/hero-bg-tablet.jpg");
   }
+
+
+  .services {
+    max-width: 690px;
+
+    background-image: url(../image/services-bg-tablet.png);
+    background-color: #111319;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      .services{
+        background-image: url(../image/services-bg-tablet-2x.png);
+    }
+  }
 }
