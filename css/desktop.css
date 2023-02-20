@@ -64,4 +64,26 @@
   .social-link:is(:hover, :focus) {
     color: var(--accent-color);
   }
+
+
+
+  .subscription {
+    width: calc(50% + 15px);
+    padding-top: 130px;
+    padding-bottom: 120px;
+  }
+
+  .contact-wrap {
+    max-width: 100%;
+    margin: 0 auto;
+  
+    background-color: #191c26;
+    background-image: url(../image/background-contacts.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: calc(50% - 15px) 100%;
+  }
+  .contact-wrap .container {
+    display: flex;
+  }
 }
