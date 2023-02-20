@@ -531,7 +531,7 @@ img {
 /* ------ Portfolio ------ */
 
 .portfolio-suptitle {
-  margin-bottom: 44px;
+  margin-bottom: 71px;
 }
 .visually-hidden {
   position: absolute;
@@ -548,7 +548,7 @@ img {
 }
 .portfolio-list {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 30px;
 }
 .portfolio-item {
