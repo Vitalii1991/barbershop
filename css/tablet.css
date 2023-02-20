@@ -93,4 +93,16 @@
     line-height: 1.36;
     letter-spacing: 0.2em;
   }
+
+  /* ------ About us ------ */
+
+  .about .container {
+    display: flex;
+  }
+  .about-list {
+    display: flex;
+    gap: 30px;
+    width: calc((100% - 30px) / 2);
+    flex-shrink: 0;
+  }
 }
