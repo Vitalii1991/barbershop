@@ -283,6 +283,7 @@ img {
 }
 .hero-container-bg {
   max-width: 480px;
+  margin-left: auto;
   padding: 208px 20px 209px 20px;
 
   background-image: linear-gradient(
@@ -432,6 +433,10 @@ img {
 }
 .benefits-item {
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
   width: calc((100% - 30px) / 2);
   height: 110px;
   padding: 15px 20px;
