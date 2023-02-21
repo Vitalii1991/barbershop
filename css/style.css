@@ -173,11 +173,17 @@ img {
 
   overflow-y: auto;
 
+  transform: translateX(0);
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
   width: 62%;
   height: 100vh;
   padding: 48px 31px 227px 40px;
 
   background-color: #ffffff;
+}
+.backdrop.is-hidden .mob-menu {
+  transform: translateX(100%);
 }
 .menu-container {
   max-width: 266px;
