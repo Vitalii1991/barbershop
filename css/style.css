@@ -11,9 +11,6 @@
   --secondary-text-color: #9da4bd;
   --accent-color: #ff6c00;
 }
-html {
-  box-sizing: border-box;
-}
 body,
 h1,
 h2,
@@ -176,7 +173,7 @@ img {
   transform: translateX(0);
   transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  width: 62%;
+  width: 76%;
   height: 100vh;
   padding: 48px 31px 227px 40px;
 
