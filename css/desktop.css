@@ -2,17 +2,6 @@
   .container {
     max-width: 1200px;
   }
-  .btn:is(:hover, :focus) {
-    color: #ffffff;
-    background-color: var(--accent-color);
-  }
-  .hero-link:is(:hover, :focus) {
-    color: var(--accent-color);
-  }
-  .header-link:is(:hover, :focus),
-  .header-tel:is(:hover, :focus) {
-    color: var(--accent-color);
-  }
 
   /* ------ Services and prices ------ */
 
@@ -66,19 +55,7 @@
     padding-left: 130px;
   }
 
-
-
-  .social-link:is(:hover, :focus) {
-    color: var(--accent-color);
-  }
-
-
-
-  .subscription {
-    width: calc(50% + 15px);
-    padding-top: 130px;
-    padding-bottom: 120px;
-  }
+  /*------ Subscribe ------ */
 
   .contact-wrap {
     max-width: 100%;
@@ -92,5 +69,10 @@
   }
   .contact-wrap .container {
     display: flex;
+  }
+  .subscription {
+    width: calc(50% + 15px);
+    padding-top: 130px;
+    padding-bottom: 120px;
   }
 }

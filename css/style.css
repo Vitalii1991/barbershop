@@ -63,7 +63,8 @@ body {
 }
 .btn {
   min-width: 160px;
-  padding: 12px 20px;
+  max-height: 40px;
+  padding: 12px 18px;
 
   color: #ffffff;
   font-family: inherit;
@@ -125,7 +126,6 @@ img {
 .header {
   position: absolute;
   width: 100%;
-  padding-top: 40px;
 }
 .header .container {
   display: flex;
@@ -139,6 +139,9 @@ img {
   margin-right: auto;
 }
 .header-logo {
+  width: 69px;
+  height: 56px;
+
   color: #ffffff;
 }
 .header-logo > svg {
@@ -280,7 +283,7 @@ img {
 .hero-container-bg {
   margin-left: auto;
   margin-right: auto;
-  padding: 208px 20px 209px 20px;
+  padding: 208px 20px;
 
   background-image: linear-gradient(
       rgba(25, 28, 38, 0.2),
@@ -355,7 +358,7 @@ img {
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-    .services{
+    .services {
       background-image: url(../image/services-bg-mobile-2x.png);
   }
 }
@@ -646,7 +649,7 @@ img {
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-    .services{
+    .contacts {
       background-image: url(../image/contacts-bg-mob-2x.png);
   }
 }
