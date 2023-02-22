@@ -494,6 +494,10 @@ img {
   align-items: center;
   text-align: center;
 }
+.barbers-item {
+  display: block;
+  width: 418px;
+}
 .barbers-info {
   padding-top: 30px;
 }
