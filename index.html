@@ -10,11 +10,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
     rel="stylesheet">
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/mobile.css">
@@ -97,8 +97,32 @@
         <section class="about section" id="about">
             <div class="container">
                 <ul class="about-list list">
-                    <li class="about-item"><img src="./image/about-img1.jpg" alt="about" width="270" height="445"></li>
-                    <li class="about-item"><img src="./image/about-img2.jpg" alt="about" width="270" height="445"></li>
+                    <li class="about-item">
+                        <picture>
+                            <source srcset="./image/about/about1-desktop.jpg 1x,
+                            ./image/about/about1-desktop-2x.jpg 2x"
+                            media="(min-width: 1200px)"
+                            >
+                            <source srcset="./image/about/about1-tablet.jpg 1x,
+                            ./image/about/about1-tablet-2x.jpg 2x"
+                            media="(min-width: 768px)"
+                            >
+                            <img src="./image/about/about1-tablet.jpg" alt="about"/>
+                        </picture>
+                    </li>
+                    <li class="about-item">
+                        <picture>
+                            <source srcset="./image/about/about2-desktop.jpg 1x,
+                            ./image/about/about2-desktop-2x.jpg 2x"
+                            media="(min-width: 1200px)"
+                            >
+                            <source srcset="./image/about/about2-tablet.jpg 1x,
+                            ./image/about/about2-tablet-2x.jpg 2x"
+                            media="(min-width: 768px)"
+                            >
+                            <img src="./image/about/about2-tablet.jpg" alt="about"/>
+                        </picture>
+                    </li>
                 </ul>
                 <div class="about-container">
                     <p class="about-suptitle suptitle">About</p>
@@ -223,24 +247,25 @@
         <!-- Our barbers -->
         <section class="barbers section" id="barbers">
             <div class="container">
-                <p class="barbers-suptitle suptitle">For true enjoyers of the atmosphere</p>
+                <div class="barbers-container">
+                    <p class="barbers-suptitle suptitle">For true enjoyers of the atmosphere</p>
                 <h2 class="barbers-title title">Our barbers</h2>
                 <ul class="barbers-list list">
                     <li class="barbers-item">
                         <picture>
-                            <source srcset="./image/barbers1-desktop.jpg 1x,
-                            ./image/barbers1-desktop-2x.jpg 2x"
+                            <source srcset="./image/barbers/barbers1-desktop.jpg 1x,
+                            ./image/barbers/barbers1-desktop-2x.jpg 2x"
                             media="(min-width: 1200px)"
                             >
-                            <source srcset="./image/barbers1-tablet.jpg 1x,
-                            ./image/barbers1-tablet-2x.jpg 2x"
+                            <source srcset="./image/barbers/barbers1-tablet.jpg 1x,
+                            ./image/barbers/barbers1-tablet-2x.jpg 2x"
                             media="(min-width: 768px)"
                             >
-                            <source srcset="./image/barbers1-mob.jpg 1x,
-                            ./image/barbers1-mob-2x.jpg 2x"
+                            <source srcset="./image/barbers/barbers1-mob.jpg 1x,
+                            ./image/barbers/barbers1-mob-2x.jpg 2x"
                             media="(max-width: 767px)"
                             >
-                            <img src="./image/barbers1-mob.jpg" alt="barbers photo" width="418"/>
+                            <img src="./image/barbers/barbers1-mob.jpg" alt="barbers photo"/>
                         </picture>
                         <div class="barbers-info">
                             <h3 class="barbers-item-title">John Smith</h3>
@@ -279,19 +304,19 @@
                     </li>
                     <li class="barbers-item">
                         <picture>
-                            <source srcset="./image/barbers2-desktop.jpg 1x,
-                            ./image/barbers2-desktop-2x.jpg 2x"
+                            <source srcset="./image/barbers/barbers2-desktop.jpg 1x,
+                            ./image/barbers/barbers2-desktop-2x.jpg 2x"
                             media="(min-width: 1200px)"
                             >
-                            <source srcset="./image/barbers2-tablet.jpg 1x,
-                            ./image/barbers2-tablet-2x.jpg 2x"
+                            <source srcset="./image/barbers/barbers2-tablet.jpg 1x,
+                            ./image/barbers/barbers2-tablet-2x.jpg 2x"
                             media="(min-width: 768px)"
                             >
-                            <source srcset="./image/barbers2-mob.jpg 1x,
-                            ./image/barbers2-mob-2x.jpg 2x"
+                            <source srcset="./image/barbers/barbers2-mob.jpg 1x,
+                            ./image/barbers/barbers2-mob-2x.jpg 2x"
                             media="(max-width: 767px)"
                             >
-                            <img src="./image/barbers2-mob.jpg" alt="barbers photo" width="418"/>
+                            <img src="./image/barbers/barbers2-mob.jpg" alt="barbers photo"/>
                         </picture>
                         <div class="barbers-info">
                             <h3 class="barbers-item-title">Michele Doe</h3>
@@ -330,19 +355,19 @@
                     </li>
                     <li class="barbers-item">
                         <picture>
-                            <source srcset="./image/barbers3-desktop.jpg 1x,
-                            ./image/barbers3-desktop-2x.jpg 2x"
+                            <source srcset="./image/barbers/barbers3-desktop.jpg 1x,
+                            ./image/barbers/barbers3-desktop-2x.jpg 2x"
                             media="(min-width: 1200px)"
                             >
-                            <source srcset="./image/barbers3-tablet.jpg 1x,
-                            ./image/barbers3-tablet-2x.jpg 2x"
+                            <source srcset="./image/barbers/barbers3-tablet.jpg 1x,
+                            ./image/barbers/barbers3-tablet-2x.jpg 2x"
                             media="(min-width: 768px)"
                             >
-                            <source srcset="./image/barbers3-mob.jpg 1x,
-                            ./image/barbers3-mob-2x.jpg 2x"
+                            <source srcset="./image/barbers/barbers3-mob.jpg 1x,
+                            ./image/barbers/barbers3-mob-2x.jpg 2x"
                             media="(max-width: 767px)"
                             >
-                            <img src="./image/barbers3-mob.jpg" alt="barbers photo" width="418"/>
+                            <img src="./image/barbers/barbers3-mob.jpg" alt="barbers photo"/>
                         </picture>
                         <div class="barbers-info">
                             <h3 class="barbers-item-title">Alan Black</h3>
@@ -380,6 +405,7 @@
                         </div>
                     </li>
                 </ul>
+                </div>
             </div>
         </section>
         <!-- Portfolio -->
@@ -390,70 +416,70 @@
             <ul class="portfolio-list list">
                 <li class="portfolio-item">
                     <picture>
-                        <source srcset="./image/portfolio1-desktop.jpg 1x,
-                        ./image/portfolio1-desktop-2x.jpg 2x"
-                        media="(min-width: 1200px)"
-                        >
-                        <source srcset="./image/portfolio1-tablet.jpg 1x,
-                        ./image/portfolio1-tablet-2x.jpg 2x"
-                        media="(min-width: 768px)"
-                        >
-                        <source srcset="./image/portfolio1-mob.jpg 1x,
-                        ./image/portfolio1-mob-2x.jpg 2x"
-                        media="(max-width: 767px)"
-                        >
-                        <img src="./image/portfolio1-mob.jpg" alt="barbers photo" width="418"/>
+                        <source srcset="./image/portfolio/portfolio1-desktop.jpg 1x,
+                        ./image/portfolio/portfolio1-desktop-2x.jpg 2x"
+                        media="(min-width: 1200px)">
+                        
+                        <source srcset="./image/portfolio/portfolio1-tablet.jpg 1x,
+                        ./image/portfolio/portfolio1-tablet-2x.jpg 2x"
+                        media="(min-width: 768px)">
+                        
+                        <source srcset="./image/portfolio/portfolio1-mob.jpg 1x,
+                        ./image/portfolio/portfolio1-mob-2x.jpg 2x"
+                        media="(max-width: 767px)">
+                        
+                        <img src="./image/portfolio/portfolio1-mob.jpg" alt="barbers photo"/>
                     </picture>
                 </li>
                 <li class="portfolio-item">
                     <picture>
-                        <source srcset="./image/portfolio2-desktop.jpg 1x,
-                        ./image/portfolio2-desktop-2x.jpg 2x"
-                        media="(min-width: 1200px)"
-                        >
-                        <source srcset="./image/portfolio1-tablet.jpg 1x,
-                        ./image/portfolio2-tablet-2x.jpg 2x"
-                        media="(min-width: 768px)"
-                        >
-                        <source srcset="./image/portfolio2-mob.jpg 1x,
-                        ./image/portfolio2-mob-2x.jpg 2x"
-                        media="(max-width: 767px)"
-                        >
-                        <img src="./image/portfolio2-mob.jpg" alt="barbers photo" width="418"/>
+                        <source srcset="./image/portfolio/portfolio2-desktop.jpg 1x,
+                        ./image/portfolio/portfolio2-desktop-2x.jpg 2x"
+                        media="(min-width: 1200px)">
+                        
+                        <source srcset="./image/portfolio/portfolio2-tablet.jpg 1x,
+                        ./image/portfolio/portfolio2-tablet-2x.jpg 2x"
+                        media="(min-width: 768px)">
+                        
+                        <source srcset="./image/portfolio/portfolio2-mob.jpg 1x,
+                        ./image/portfolio/portfolio2-mob-2x.jpg 2x"
+                        media="(max-width: 767px)">
+                        
+                        <img src="./image/portfolio/portfolio2-mob.jpg" alt="barbers photo"/>
                     </picture>
                 </li>
                 <li class="portfolio-item">
                     <picture>
-                        <source srcset="./image/portfolio3-desktop.jpg 1x,
-                        ./image/portfolio3-desktop-2x.jpg 2x"
-                        media="(min-width: 1200px)"
-                        >
-                        <source srcset="./image/portfolio3-tablet.jpg 1x,
-                        ./image/portfolio3-tablet-2x.jpg 2x"
-                        media="(min-width: 768px)"
-                        >
-                        <source srcset="./image/portfolio3-mob.jpg 1x,
-                        ./image/portfolio3-mob-2x.jpg 2x"
-                        media="(max-width: 767px)"
-                        >
-                        <img src="./image/portfolio3-mob.jpg" alt="barbers photo" width="418"/>
+                        <source srcset="./image/portfolio/portfolio3-desktop.jpg 1x,
+                        ./image/portfolio/portfolio3-desktop-2x.jpg 2x"
+                        media="(min-width: 1200px)">
+                        
+                        <source srcset="./image/portfolio/portfolio3-tablet.jpg 1x,
+                        ./image/portfolio/portfolio3-tablet-2x.jpg 2x"
+                        media="(min-width: 768px)">
+                        
+                        <source srcset="./image/portfolio/portfolio3-mob.jpg 1x,
+                        ./image/portfolio/portfolio3-mob-2x.jpg 2x"
+                        media="(max-width: 767px)">
+                        
+                        <img src="./image/portfolio/portfolio3-mob.jpg" alt="barbers photo"/>
                     </picture>
                 </li>
                 <li class="portfolio-item">
                     <picture>
-                        <source srcset="./image/portfolio4-desktop.jpg 1x,
-                        ./image/portfolio4-desktop-2x.jpg 2x"
-                        media="(min-width: 1200px)"
-                        >
-                        <source srcset="./image/portfolio4-tablet.jpg 1x,
-                        ./image/portfolio4-tablet-2x.jpg 2x"
-                        media="(min-width: 768px)"
-                        >
-                        <source srcset="./image/portfolio4-mob.jpg 1x,
-                        ./image/portfolio4-mob-2x.jpg 2x"
-                        media="(max-width: 767px)"
-                        >
-                        <img src="./image/portfolio4-mob.jpg" alt="barbers photo" width="418"/>
+                        <source srcset="./image/portfolio/portfolio4-desktop.jpg 1x,
+                        ./image/portfolio/portfolio4-desktop-2x.jpg 2x"
+                        media="(min-width: 1200px)">
+
+                        <source srcset="./image/portfolio/portfolio4-tablet.jpg 1x,
+                        ./image/portfolio/portfolio4-tablet-2x.jpg 2x"
+                        media="(min-width: 768px)">
+
+                        <source srcset="./image/portfolio/portfolio4-mob.jpg 1x,
+                        ./image/portfolio/portfolio4-mob-2x.jpg 2x"
+                        media="(max-width: 767px)">
+
+                        <img src="./image/portfolio/portfolio4-mob.jpg" alt="barbers photo"/>
                     </picture>
                 </li>
             </ul>

@@ -17,8 +17,15 @@
   /* ------ Services and prices ------ */
 
   .services {
-    max-width: 1600px;
-    margin: 0 auto;
+    background-image: url(../image/services-bg-desktop.png);
+    background-color: #111319;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      .services{
+        background-image: url(../image/services-bg-desktop-2x.png);
+    }
   }
   .services-container {
     display: flex;

@@ -430,8 +430,7 @@ img {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  
+
   width: calc((100% - 30px) / 2);
   height: 110px;
   padding: 15px 20px;
