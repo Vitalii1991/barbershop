@@ -3,6 +3,65 @@
     max-width: 1200px;
   }
 
+   /* ------ Header ------ */
+
+  .header .container {
+    max-width: 1170px;
+    padding: 0;
+  }
+  .header-logo {
+    margin-right: 131px;
+  }
+  .header-list {
+    gap: 30px;
+  }
+  .header-contacts {
+    right: 17px;
+    flex-direction: row;
+    align-items: center;
+    gap: 43px;
+  }
+
+  /* ------ Hero ------ */
+
+  .hero .container {
+    max-width: 1200px;
+  }
+  .hero-container-bg {
+    max-width: 1070px;
+
+    padding-bottom: 208px;
+
+    background-image: linear-gradient(
+        rgba(25, 28, 38, 0.2),
+        rgba(25, 28, 38, 0.2)),
+      url("../image/hero-bg-desktop.jpg");
+    flex-grow: 1;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      .hero-container-bg {
+        background-image: linear-gradient(
+          rgba(25, 28, 38, 0.2),
+          rgba(25, 28, 38, 0.2)
+        ),
+        url("../image/hero-bg-desktop-2x.jpg");
+      }
+  }
+  .hero-title {
+    font-size: 72px;
+  }
+  .hero-subtitle {
+    max-width: 360px;
+
+    font-size: 18px;
+    line-height: 1.67;
+  }
+  .hero-list {
+    transform: rotate(-90deg) translateY(140%);
+  }
+
   /* ------ Services and prices ------ */
 
   .services {
