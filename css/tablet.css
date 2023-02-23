@@ -15,12 +15,11 @@
 
   /* ------ Header ------ */
 
-  .hero {
-    padding: 0;
+  .header {
+    top: 32px;
   }
-  .hero .container {
-    display: flex;
-    max-width: 768px;
+  .header .container {
+    position: relative;
   }
   .header-nav {
     align-items: center;
@@ -32,7 +31,7 @@
   }
   .header-list {
     display: flex;
-    gap: 30px;
+    gap: 20px;
   }
   .header-link {
     padding-top: 12px;
@@ -49,11 +48,13 @@
     letter-spacing: 0.1em;
   }
   .header-contacts {
+    position: absolute;
+    top: 8px;
+    right: 48px;
+
     display: flex;
     flex-direction: column-reverse;
     gap: 20px;
-    margin-top: 39px;
-    margin-right: 17px;
   }
   .header-tel {
     text-align: center;
@@ -72,6 +73,13 @@
 
   /* ------ Hero ------ */
 
+  .hero {
+    padding: 0;
+  }
+  .hero .container {
+    display: flex;
+    max-width: 768px;
+  }
   .hero-container-bg {
     max-width: 573px;
     min-height: 680px;
