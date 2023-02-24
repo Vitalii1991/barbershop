@@ -199,6 +199,12 @@
     margin-right: auto;
     margin-left: auto;
   }
+  .social-link:is(:hover, :focus) {
+    color: var(--accent-color);
+  }
+
+  /* ------ Portfolio ------ */
+
   .portfolio-list {
     flex-direction: row;
     flex-wrap: wrap;
@@ -206,9 +212,7 @@
   .portfolio-item {
     width: calc((100% - 30px) / 2);
   }
-  .social-link:is(:hover, :focus) {
-    color: var(--accent-color);
-  }
+  
 
   /*------ Subscribe ------ */
 

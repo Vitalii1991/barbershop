@@ -159,6 +159,17 @@
     padding: 20px 24px;
   }
 
+  /* ------ Barbers ------ */
+
+  .barbers-container {
+    max-width: 100%;
+    margin: 0;
+  }
+  .barbers-list {
+    flex-direction: row;
+    gap: 30px;
+  }
+
   /*------ Subscribe ------ */
 
   .contact-wrap {
