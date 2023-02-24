@@ -410,6 +410,7 @@ img {
   line-height: 1.43;
 }
 .services-text:first-child {
+  display: inline-flex;
   order: -1;
 }
 .services-btn {
