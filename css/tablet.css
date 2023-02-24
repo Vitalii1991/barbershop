@@ -216,13 +216,13 @@
   /*------ Subscribe ------ */
 
   .contact-wrap {
-    background-image: url("../image/contacts-bg-desktop.png");
+    background-image: url("../image/contacts-bg-tablet.png");
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
       .contact-wrap {
-        background-image: url("../image/contacts-bg-desktop-2x.png");
+        background-image: url("../image/contacts-bg-tablet-2x.png");
     }
   }
   .subscription {

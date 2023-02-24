@@ -182,8 +182,16 @@
   /*------ Subscribe ------ */
 
   .contact-wrap {
+    background-image: url("../image/contacts-bg-desktop.png");
     background-position: right;
     background-size: calc(50% - 15px) 100%;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      .contact-wrap {
+        background-image: url("../image/contacts-bg-desktop-2x.png");
+    }
   }
   .contact-wrap .container {
     display: flex;
