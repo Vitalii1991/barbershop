@@ -276,4 +276,10 @@
   .footer-list {
     margin-bottom: 0;
   }
+    
+  /* ----- Modal form ----- */
+
+  .form-btn:is(:hover, :focus) {
+    background-color: rgb(231, 95, 11);
+  }
 }
