@@ -170,6 +170,15 @@
     gap: 30px;
   }
 
+  /* ------ Portfolio ------ */
+
+  .portfolio-suptitle {
+    margin-bottom: 44px;
+  }
+  .portfolio-item {
+    width: calc((100% - 90px) / 4);
+  }
+
   /*------ Subscribe ------ */
 
   .contact-wrap {
