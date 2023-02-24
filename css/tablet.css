@@ -215,6 +215,16 @@
 
   /*------ Subscribe ------ */
 
+  .contact-wrap {
+    background-image: url("../image/contacts-bg-desktop.png");
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      .contact-wrap {
+        background-image: url("../image/contacts-bg-desktop-2x.png");
+    }
+  }
   .subscription {
     padding-left: 39px;
     padding-right: 39px;
@@ -235,18 +245,6 @@
 
   /*------ Contacts ------ */
 
-  .contacts {
-    padding-left: 39px;
-
-    background-image: url("../image/contacts-bg-tablet.png");
-  }
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-      .contacts {
-        background-image: url("../image/contacts-bg-tablet-2x.png");
-    }
-  }
   .contacts-title {
     text-align: start;
   }

@@ -72,12 +72,22 @@
 
   /*------ Subscribe ------ */
 
+  .contact-wrap {
+    background-image: url("../image/contacts-bg-tablet.png");
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      .contact-wrap {
+        background-image: url("../image/contacts-bg-tablet-2x.png");
+    }
+  }
   .subscription-title,
   .contacts-title {
     font-size: 42px;
   }
   .contacts {
-    max-width: 768px;
+    padding-left: 39px;
   }
 
   /* ----- Modal window ----- */
